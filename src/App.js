@@ -4,10 +4,12 @@ import Login from "./Login";
 import { getTokenFromResponse } from "./spotify";
 import SpotifyWebApi from "spotify-web-api-js"
 import Player from "./Player";
+import { useStateValue } from "./StateProvider";
 const s = new SpotifyWebApi();
 
 function App() {
   const [ token , setToken] = useState(null);
+  const [{ }, dispatch] = useStateValue();
   useEffect(() => {
     const hash = getTokenFromResponse();
     
