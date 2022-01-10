@@ -41,11 +41,8 @@ function App() {
 
   return (
     <div className="app">
-      <Player/>
-      { token ? (<h1>I am logged in</h1>):
-      (<Login/>)}
-
-      
+      {!token && <Login />}
+      {token && <Player spotify={s} />}
     </div>
   );
 }
