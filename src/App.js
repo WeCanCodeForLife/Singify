@@ -28,7 +28,15 @@ function App() {
       dispatch({
         type: "SET_USER",
         user: user,
-      });
+});
+
+s.getUserPlaylists().then((playlists) => {
+  dispatch({
+    type: "SET_PLAYLISTS",
+    playlists,
+  });
+
+});
       });
   }
 
