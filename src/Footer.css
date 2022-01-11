@@ -9,6 +9,10 @@
   background-color: #282828;
 }
 .footer__left {
+  display: flex;
+  align-items: center;
+  color: white;
+  width: 300px;
   flex: 0.3;
 }
 .footer__center {
@@ -21,5 +25,15 @@
   justify-content: space-between;
 }
 .footer__right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
   flex: 0.3;
+}
+.footer__albumLogo {
+  height: 60px;
+  width: 60px;
+  margin-right: 20px;
+  object-fit: contain;
 }

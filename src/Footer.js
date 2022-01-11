@@ -16,7 +16,19 @@ function Footer() {
     return (
         <div className="footer">
           <div className="footer__left">
-           <p>Album and Song details</p>
+          <img
+          className="footer__albumLogo"
+          src=""
+          alt=""
+        />
+          <div className="footer__songInfo">
+            <h4>name</h4>
+            <p>artist</p>
+          </div>
+          <div className="footer__songInfo">
+            <h4></h4>
+            <p></p>
+          </div>
           </div>
           <div className="footer__center">
           <ShuffleIcon className="footer__green" />
