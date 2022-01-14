@@ -28,7 +28,15 @@ function App() {
       dispatch({
         type: "SET_USER",
         user: user,
-      });
+});
+
+s.getUserPlaylists().then((playlists) => {
+  dispatch({
+    type: "SET_PLAYLISTS",
+    playlists,
+  });
+
+});
       });
   }
 
@@ -41,11 +49,8 @@ function App() {
 
   return (
     <div className="app">
-      <Player/>
-      { token ? (<h1>I am logged in</h1>):
-      (<Login/>)}
-
-      
+      {!token && <Login />}
+      {token && <Player spotify={s} />}
     </div>
   );
 }
