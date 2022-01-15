@@ -18,12 +18,12 @@ function Footer() {
           <div className="footer__left">
           <img
           className="footer__albumLogo"
-          src=""
+          src="https://upload.wikimedia.org/wikipedia/en/4/47/The-contours-do-you-love-me.jpg"
           alt=""
         />
           <div className="footer__songInfo">
-            <h4>name</h4>
-            <p>artist</p>
+            <h4>Do You Love Me</h4>
+            <p>The Contours</p>
           </div>
           <div className="footer__songInfo">
             <h4></h4>

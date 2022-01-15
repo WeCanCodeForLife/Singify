@@ -26,6 +26,11 @@ export const initialState = {
                   ...state,
                   playlists: action.playlists,
                 };
+        case "SET_DISCOVER_WEEKLY":
+                  return {
+                    ...state,
+                    discover_weekly: action.discover_weekly,
+                  };        
     }
 }
 
