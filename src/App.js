@@ -18,11 +18,14 @@ function App() {
   
     if (_token) {
       setToken(_token)
-
-     
-
       s.setAccessToken(_token);
-    
+      
+      s.getPlaylist("37i9dQZEVXcFp4bdDgmGDr").then((response) =>
+      dispatch({
+        type: "SET_DISCOVER_WEEKLY",
+        discover_weekly: response,
+      })
+    );
     
     s.getMe().then((user) => {
       dispatch({
