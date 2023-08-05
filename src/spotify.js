@@ -2,7 +2,7 @@
 export const authEndpoint = "https://accounts.spotify.com/authorize";
 
 const clientId = "b55931b004b9404f9f6a6db2ef366558";
-const redirectUri = "https://hungify.vercel.app";
+const redirectUri = "hhttps://hi.theclevercoder777.repl.co/service/hvtrs8%2F-aacmultq.qpmtkf%7B.aoo%2Fgn-lmgkn";
 const scopes = [
   "user-read-currently-playing",
   "user-read-recently-played",
