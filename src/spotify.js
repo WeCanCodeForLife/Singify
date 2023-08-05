@@ -1,8 +1,8 @@
 // https://developer.spotify.com/documentation/web-playback-sdk/quick-start/#
 export const authEndpoint = "https://accounts.spotify.com/authorize";
 
-const clientId = "e20522530a244fdd865fde4c101006ad";
-const redirectUri = "http://localhost:3000/";
+const clientId = "b55931b004b9404f9f6a6db2ef366558";
+const redirectUri = "https://hungify.vercel.app";
 const scopes = [
   "user-read-currently-playing",
   "user-read-recently-played",
